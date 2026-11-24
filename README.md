@@ -8,7 +8,7 @@ A 4 KB Python chess engine for the make.fun tiny-chess-01 bounty: strongest engi
 - Fixed node budget (30,000 nodes/move, soft gate at 60% for the next depth) — never a clock, fully deterministic
 - Capture-only quiescence with check evasions, Zobrist transposition table, killer moves, late-move reductions, null-move pruning, check extensions, mate-distance pruning
 - Tapered piece-square tables with a passed-pawn fold, fitted to the position set
-- A small embedded opening book: lines recorded by replaying wins against the house opponents offline (deterministic opponents replay move-for-move), stored as packed move lists
+- A small embedded opening book: lines recorded by replaying wins against the house opponents offline (deterministic opponents replay move-for-move), stored as packed move lists — 3 embedded lines (sicilian-najdorf, slav-defence, caro-kann-classical) from the 40-opening book
 
 ## Measured results (local, kit harness)
 
